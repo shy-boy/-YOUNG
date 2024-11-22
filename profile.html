@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>朋YOUNG</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="profile.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">首页</a></li>
+                <li><a href="shop.html">商城</a></li>
+                <li><a href="profile.html">个人空间</a></li>
+                <li><a href="about.html">关于我们</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="profile-main">
+        <div class="profile-cover">
+            <img src="封面图.jpg" alt="个人封面图">
+        </div>
+        
+        <div class="profile-container">
+            <!-- 左侧个人信息 -->
+            <div class="profile-sidebar">
+                <div class="profile-avatar">
+                    <img src="头像.jpg" alt="个人头像">
+                </div>
+                <div class="profile-details">
+                    <h2 class="username">小红</h2>
+                    <p class="user-id">ID: 888888</p>
+                    <div class="user-stats">
+                        <div class="stat-item">
+                            <span class="stat-number">128</span>
+                            <span class="stat-label">关注</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">356</span>
+                            <span class="stat-label">粉丝</span>
+                        </div>
+                    </div>
+                    <div class="profile-bio">
+                        <p>这里是个人简介，热爱生活，享受美好~</p>
+                        <p>地区：上海</p>
+                        <p>加入时间：2024-01</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 右侧内容区域 -->
+            <div class="profile-content">
+                <div class="profile-nav">
+                    <button class="nav-btn active">个人动态</button>
+                    <button class="nav-btn">收藏夹</button>
+                    <button class="nav-btn">关注列表</button>
+                    <button class="nav-btn">设置</button>
+                </div>
+
+                <div class="posts-container">
+                    <!-- 单条动态 -->
+                    <div class="post-card">
+                        <div class="post-header">
+                            <img src="头像.jpg" alt="头像" class="post-avatar">
+                            <div class="post-meta">
+                                <h3 class="post-author">张三</h3>
+                                <span class="post-time">2024-03-20 14:30</span>
+                            </div>
+                        </div>
+                        <div class="post-content">
+                            <p class="post-text">今天天气真好，分享一个美好的日常...</p>
+                            <div class="post-images">
+                                <img src="风景.jpg" alt="动态图片">
+                            </div>
+                        </div>
+                        <div class="post-actions">
+                            <button class="action-btn"><i class="far fa-heart"></i> 88</button>
+                            <button class="action-btn"><i class="far fa-comment"></i> 12</button>
+                            <button class="action-btn"><i class="far fa-share-square"></i> 分享</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 我的个人网站. 保留所有权利.</p>
+    </footer>
+</body>
+</html> 

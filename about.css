@@ -1,0 +1,159 @@
+/* 基础设置 */
+:root {
+    --primary-text: #ffffff;
+    --secondary-text: #b4b4b4;
+    --neon-blue: #0ff;
+    --neon-purple: #b026ff;
+    --dark-bg: #0a0a0f;
+    --card-bg: rgba(16, 16, 24, 0.95);
+}
+
+.about-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 20px;
+    color: var(--primary-text);
+}
+
+/* 页面标题样式 */
+.about-header {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.cyber-title {
+    font-size: 3em;
+    color: var(--primary-text);
+    text-shadow: 0 0 10px var(--neon-blue);
+    margin-bottom: 20px;
+}
+
+.cyber-line {
+    height: 2px;
+    background: linear-gradient(
+        90deg,
+        transparent,
+        var(--neon-blue),
+        transparent
+    );
+    width: 200px;
+    margin: 0 auto;
+}
+
+/* 卡片基础样式 */
+.cyber-card {
+    background: var(--card-bg);
+    border: 1px solid var(--neon-blue);
+    border-radius: 10px;
+    padding: 30px;
+    margin-bottom: 40px;
+    box-shadow: 0 0 20px rgba(0, 255, 255, 0.1);
+}
+
+/* 段落文本样式 */
+.cyber-text {
+    color: var(--secondary-text);
+    line-height: 1.8;
+    font-size: 1.1em;
+    margin-bottom: 20px;
+}
+
+/* 品牌理念部分 */
+.brand-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    align-items: center;
+}
+
+.brand-image img {
+    width: 100%;
+    border-radius: 8px;
+    border: 2px solid var(--neon-purple);
+}
+
+/* 核心价值部分 */
+.values-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.value-card {
+    text-align: center;
+    padding: 30px;
+    transition: transform 0.3s ease;
+}
+
+.value-card:hover {
+    transform: translateY(-5px);
+}
+
+.value-icon {
+    width: 60px;
+    height: 60px;
+    margin: 0 auto 20px;
+}
+
+.value-card h3 {
+    color: var(--neon-blue);
+    margin-bottom: 15px;
+}
+
+.value-card p {
+    color: var(--secondary-text);
+}
+
+/* 联系方式部分 */
+.contact-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    margin-top: 30px;
+}
+
+.contact-item {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.cyber-icon {
+    width: 40px;
+    height: 40px;
+    color: var(--neon-purple);
+}
+
+.contact-info h3 {
+    color: var(--neon-blue);
+    margin-bottom: 5px;
+}
+
+.contact-info p {
+    color: var(--secondary-text);
+}
+
+/* 标题样式 */
+.section-title {
+    color: var(--primary-text);
+    font-size: 2em;
+    margin-bottom: 30px;
+    text-shadow: 0 0 5px var(--neon-purple);
+}
+
+/* 响应式设计 */
+@media (max-width: 768px) {
+    .brand-content {
+        grid-template-columns: 1fr;
+    }
+
+    .values-grid,
+    .contact-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .cyber-title {
+        font-size: 2em;
+    }
+} 
